@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.parse.starter.FeedActivity"
+    android:background="#ffffff">
+
+
+
+    <fragment
+        android:name="com.parse.starter.FragmentToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/fragment1"
+        android:layout_margin="0dp">
+    </fragment>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

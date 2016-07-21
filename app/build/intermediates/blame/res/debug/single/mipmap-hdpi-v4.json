@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\4.7\\MakeMeLaugh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_camera.png",
+        "source": "C:\\4.7\\MakeMeLaugh\\app\\src\\main\\res\\mipmap-hdpi\\ic_camera.png"
+    },
+    {
+        "merged": "C:\\4.7\\MakeMeLaugh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_camera_black_36dp.png",
+        "source": "C:\\4.7\\MakeMeLaugh\\app\\src\\main\\res\\mipmap-hdpi\\ic_camera_black_36dp.png"
+    },
+    {
+        "merged": "C:\\4.7\\MakeMeLaugh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_backburger.png",
+        "source": "C:\\4.7\\MakeMeLaugh\\app\\src\\main\\res\\mipmap-hdpi\\ic_backburger.png"
+    },
+    {
+        "merged": "C:\\4.7\\MakeMeLaugh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_camera_grey600_48dp.png",
+        "source": "C:\\4.7\\MakeMeLaugh\\app\\src\\main\\res\\mipmap-hdpi\\ic_camera_grey600_48dp.png"
+    },
+    {
+        "merged": "C:\\4.7\\MakeMeLaugh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\4.7\\MakeMeLaugh\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    }
+]

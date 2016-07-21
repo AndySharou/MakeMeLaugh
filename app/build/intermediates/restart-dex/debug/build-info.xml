@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86,armeabi-v7a,armeabi"
+    api-level="22"
+    density="560dpi"
+    format="7"
+    timestamp="8867156770871"
+    token="-4293669767787930083" >
+
+    <task
+        name="javac"
+        duration="434" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="246" />
+    <task
+        name="verifier"
+        duration="52" />
+
+    <artifact
+        location="C:\4.7\MakeMeLaugh\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="8867156770871" >
+        <artifact
+            location="C:\4.7\MakeMeLaugh\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
