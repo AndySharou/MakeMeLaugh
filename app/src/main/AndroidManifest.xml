@@ -11,9 +11,12 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:name=".StarterApplication"
@@ -27,6 +30,7 @@
         <meta-data
             android:name="com.parse.CLIENT_KEY"
             android:value="@string/parse_client_key" />
+
 
         <activity
             android:name=".Registration"
@@ -57,6 +61,10 @@
         <activity
             android:name=".FeedActivity"
             android:label="@string/title_activity_feed"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AcceptActivity"
+            android:label="@string/title_activity_accept"
             android:theme="@style/AppTheme"></activity>
     </application>
 

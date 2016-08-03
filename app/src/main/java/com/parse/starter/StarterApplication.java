@@ -30,9 +30,9 @@ public class StarterApplication extends Application {
 
     // Add your initialization code here
     Parse.initialize(new Parse.Configuration.Builder(getApplicationContext())
-            .applicationId("insta6466GHFYSPFBFfb")
+            .applicationId("makemelaugh789456")
             .clientKey(null)
-            .server("http://instagram12331.herokuapp.com/parse/")
+            .server("http://makemelaugh.herokuapp.com/parse/")
     .build()
     );
 

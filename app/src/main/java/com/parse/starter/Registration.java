@@ -89,6 +89,7 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
           ParseUser user = new ParseUser();
           user.setUsername(String.valueOf(usernameField.getText()));
           user.setPassword(String.valueOf(passwordField.getText()));
+          user.put("Carma", 0);
 
           user.signUpInBackground(new SignUpCallback() {
               @Override

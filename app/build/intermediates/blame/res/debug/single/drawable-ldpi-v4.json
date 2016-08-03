@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\4.7\\MakeMeLaugh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\check.png",
+        "source": "C:\\4.7\\MakeMeLaugh\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\check.png"
+    },
+    {
         "merged": "C:\\4.7\\MakeMeLaugh\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\camera.png",
         "source": "C:\\4.7\\MakeMeLaugh\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\camera.png"
     }

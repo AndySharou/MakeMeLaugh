@@ -258,8 +258,10 @@
     <string name="parse_app_id">makemelaugh789456</string>
     <string name="parse_client_key">trewq123456</string>
     <string name="password">password</string>
+    <string name="server">http://makemelaugh.herokuapp.com/parse/</string>
     <string name="sign_up">Sign Up</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="title_activity_accept">AcceptActivity</string>
     <string name="title_activity_feed">FeedActivity</string>
     <string name="title_activity_photo">PhotoActivity</string>
     <string name="title_activity_user_feed">User Feed</string>

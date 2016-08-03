@@ -19,71 +19,56 @@
         android:layout_margin="0dp">
     </fragment>
 
-    <fragment
-        android:name="com.parse.starter.FragmentCamera"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:id="@+id/fragment3"
-        android:layout_below="@+id/fragment1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
-    </fragment>
-
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/switch1"
         android:textColor="#010101"
-        android:layout_above="@+id/takePhoto"
-        android:layout_toRightOf="@+id/getBack"
-        android:layout_toEndOf="@+id/getBack"
-        android:layout_marginLeft="45dp"
-        android:layout_marginStart="45dp"
-        android:checked="false" />
+        android:checked="false"
+        android:typeface="monospace"
+        android:textOff="Photo"
+        android:textOn="Video"
+        android:visibility="visible"
+        android:layout_alignBottom="@+id/takePhoto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="25dp" />
 
     <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:id="@+id/takePhoto"
         android:src="@android:drawable/ic_menu_camera"
-        android:layout_marginBottom="34dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/switch1"
-        android:layout_toEndOf="@+id/switch1"
-        android:layout_marginLeft="34dp"
-        android:layout_marginStart="34dp" />
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:id="@+id/getBack"
         android:src="@mipmap/ic_backburger"
-        android:layout_marginLeft="38dp"
-        android:layout_marginStart="38dp"
-        android:layout_alignTop="@+id/takePhoto"
+        android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Photo"
-        android:id="@+id/textView"
-        android:textSize="30dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_alignBottom="@+id/switch1"
-        android:layout_alignLeft="@+id/getBack"
-        android:layout_alignStart="@+id/getBack" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/fragment1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/make_world_laugh_1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Video"
-        android:id="@+id/textView3"
-        android:layout_alignTop="@+id/textView"
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/chek"
+        android:src="@mipmap/ic_check_white_36dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/imageView"
         android:layout_alignLeft="@+id/takePhoto"
-        android:layout_alignStart="@+id/takePhoto"
-        android:textSize="30dp" />
+        android:layout_alignStart="@+id/takePhoto" />
 
 </RelativeLayout>

@@ -4,6 +4,10 @@
         "source": "C:\\4.7\\MakeMeLaugh\\app\\src\\main\\res\\mipmap-hdpi\\ic_camera.png"
     },
     {
+        "merged": "C:\\4.7\\MakeMeLaugh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_check_white_36dp.png",
+        "source": "C:\\4.7\\MakeMeLaugh\\app\\src\\main\\res\\mipmap-hdpi\\ic_check_white_36dp.png"
+    },
+    {
         "merged": "C:\\4.7\\MakeMeLaugh\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_camera_black_36dp.png",
         "source": "C:\\4.7\\MakeMeLaugh\\app\\src\\main\\res\\mipmap-hdpi\\ic_camera_black_36dp.png"
     },
