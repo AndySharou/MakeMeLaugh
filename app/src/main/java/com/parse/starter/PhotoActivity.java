@@ -93,17 +93,17 @@ public class PhotoActivity extends AppCompatActivity implements View.OnClickList
 
                 ParseFile fileImage = new ParseFile("image.jpg", byteArray);
 
-                final ParseObject object = new ParseObject("Images");
+                final ParseObject objectP = new ParseObject("Images");
 
-                object.put("username", ParseUser.getCurrentUser().getUsername());
+                objectP.put("username", ParseUser.getCurrentUser().getUsername());
 
-                object.put("image", fileImage);
+                objectP.put("image", fileImage);
 
                 ParseACL parseACL = new ParseACL();
                 parseACL.setPublicReadAccess(true);
-                object.setACL(parseACL);
+                objectP.setACL(parseACL);
 
-                object.saveInBackground(new SaveCallback() {
+                objectP.saveInBackground(new SaveCallback() {
 
 
                     @Override
@@ -122,39 +122,70 @@ public class PhotoActivity extends AppCompatActivity implements View.OnClickList
                 });
                 Log.i("Info", "Save successfully");
 
-                ParseQuery<ParseObject> query = ParseQuery.getQuery("User");
+                ParseQuery<ParseUser> query = ParseUser.getQuery();
+
+                query.whereEqualTo("username", ParseUser.getCurrentUser().getUsername());
+                query.findInBackground(new FindCallback<ParseUser>() {
+                    @Override
+                    public void done(List<ParseUser> objects, ParseException e) {
+                        if (e == null) {
+
+                            if (objects.size() > 0) {
+
+                                for (ParseUser user : objects) {
+                                    user.increment("carma");
+                                    Log.i("Info", "Get Carma");
+                                    user.saveInBackground();
+                                    Log.i("Info", "Save Carma");
+
+                                }
+                            }
+                        }
+                    }
+                });
+
+                /*ParseQuery<ParseObject> query = ParseQuery.getQuery("User");
                 query.whereEqualTo("username", ParseUser.getCurrentUser().getUsername());
                 query.setLimit(1);
                 Log.i("Info", "user found and get quered");
 
 
+
+
                 query.findInBackground(new FindCallback<ParseObject>() {
                     @Override
                     public void done(List<ParseObject> objects, ParseException e2) {
+
                         if (e2 == null) {
 
-                                try {
 
-                                    objects.get(0).put("carma", 10);
-                                    Log.i("Info", "Get Carma");
+                            for (ParseObject object: objects) {
+
+                                object.increment("carma");
+                                object.saveInBackground();
+
+                            }
+
+                            /*try {
+
+                                    objects.get(0).increment("carma");
+                                    //Log.i("Info", "Get Carma");
                                     objects.get(0).saveInBackground();
-                                    Log.i("Info", "Save Carma");
+                                    //Log.i("Info", "Save Carma");
+
                                 } catch (Exception e3) {
                                     e3.printStackTrace();
 
                                     Toast.makeText(getApplication().getBaseContext(), "There was an error with Carma", Toast.LENGTH_LONG).show();
 
                                 }
-                            } else {
+                            }  else {
+
                                 e2.printStackTrace();
                             }
+                        }
 
-                    }
-                });
-
-
-
-
+                });*/
 
 
             } catch (Exception e) {

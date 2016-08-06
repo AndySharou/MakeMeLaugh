@@ -4,30 +4,52 @@
     api-level="19"
     density="xxhdpi"
     format="7"
-    timestamp="20452981203451"
-    token="-4293669767787930083" >
+    timestamp="25737666921251"
+    token="-4293669767787930083"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="349" />
+        duration="396" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="468" />
     <task
         name="instant-run-transform"
-        duration="16" />
+        duration="20" />
     <task
         name="verifier"
         duration="3" />
 
     <artifact
-        location="C:\4.7\MakeMeLaugh\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\4.7\MakeMeLaugh\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
-    <build timestamp="20452981203451" >
+    <build timestamp="23410476242828" >
         <artifact
             location="C:\4.7\MakeMeLaugh\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="23708272579943"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\4.7\MakeMeLaugh\app\build\intermediates\builds\debug\23708272579943\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="24540728183810"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\4.7\MakeMeLaugh\app\build\intermediates\builds\debug\24540728183810\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="25737666921251"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\4.7\MakeMeLaugh\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
